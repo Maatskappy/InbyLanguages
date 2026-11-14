@@ -1,0 +1,643 @@
+{
+  "grammars": [
+    {
+      "name": "tree-sitter-agda",
+      "repository": "https://github.com/tree-sitter/tree-sitter-agda.git",
+      "revision": "b9b32fa042c2952a7bfca86847ea325e44ccc897",
+      "product": "TreeSitterAgda",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-agda/LICENSE"
+      ],
+      "queries": []
+    },
+    {
+      "name": "tree-sitter-bash",
+      "repository": "https://github.com/tree-sitter/tree-sitter-bash.git",
+      "revision": "49c31006d8307dcb12bc5770f35b6d5b9e2be68e",
+      "product": "TreeSitterBash",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-bash/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/bash/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-c",
+      "repository": "https://github.com/tree-sitter/tree-sitter-c.git",
+      "revision": "212a80f86452bb1316324fa0db730cf52f29e05a",
+      "product": "TreeSitterC",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-c/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/c/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-c-sharp",
+      "repository": "https://github.com/tree-sitter/tree-sitter-c-sharp.git",
+      "revision": "dd5e59721a5f8dae34604060833902b882023aaf",
+      "product": "TreeSitterCSharp",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-c-sharp/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/c-sharp/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-cpp",
+      "repository": "https://github.com/tree-sitter/tree-sitter-cpp.git",
+      "revision": "a71474021410973b29bfe99440d57bcd750246b1",
+      "product": "TreeSitterCPP",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-cpp/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/cpp/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/cpp/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-css",
+      "repository": "https://github.com/tree-sitter/tree-sitter-css.git",
+      "revision": "98c7b3dceb24f1ee17f1322f3947e55638251c37",
+      "product": "TreeSitterCSS",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-css/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/css/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-dart",
+      "repository": "https://github.com/UserNobody14/tree-sitter-dart.git",
+      "revision": "e81af6ab94a728ed99c30083be72d88e6d56cf9e",
+      "product": "TreeSitterDart",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-dart/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/dart/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-dockerfile",
+      "repository": "https://github.com/camdencheek/tree-sitter-dockerfile.git",
+      "revision": "33e22c33bcdbfc33d42806ee84cfd0b1248cc392",
+      "product": "TreeSitterDockerfile",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-dockerfile/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/dockerfile/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-elixir",
+      "repository": "https://github.com/elixir-lang/tree-sitter-elixir.git",
+      "revision": "11426c5fd20eef360d5ecaf10729191f6bc5d715",
+      "product": "TreeSitterElixir",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-elixir/LICENSE",
+        "Vendor/Licenses/tree-sitter-elixir/NOTICE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/elixir/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/elixir/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-go",
+      "repository": "https://github.com/tree-sitter/tree-sitter-go.git",
+      "revision": "ff86c7f1734873c8c4874ca4dd95603695686d7a",
+      "product": "TreeSitterGo",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-go/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/go/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-go-mod",
+      "repository": "https://github.com/camdencheek/tree-sitter-go-mod.git",
+      "revision": "bbe2fe3be4b87e06a613e685250f473d2267f430",
+      "product": "TreeSitterGoMod",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-go-mod/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/go-mod/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-haskell",
+      "repository": "https://github.com/tree-sitter/tree-sitter-haskell.git",
+      "revision": "dd924b8df1eb76261f009e149fc6f3291c5081c2",
+      "product": "TreeSitterHaskell",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-haskell/LICENSE",
+        "Vendor/Licenses/tree-sitter-haskell/queries__LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/haskell/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-html",
+      "repository": "https://github.com/tree-sitter/tree-sitter-html.git",
+      "revision": "d742025fa2d8e6100f134a6ea990443aa1f074b3",
+      "product": "TreeSitterHTML",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-html/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/html/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/html/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-java",
+      "repository": "https://github.com/tree-sitter/tree-sitter-java.git",
+      "revision": "2b57cd9541f9fd3a89207d054ce8fbe72657c444",
+      "product": "TreeSitterJava",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-java/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/java/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-javascript",
+      "repository": "https://github.com/tree-sitter/tree-sitter-javascript.git",
+      "revision": "f1e5a09b8d02f8209a68249c93f0ad647b228e6e",
+      "product": "TreeSitterJS",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-javascript/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights-jsx.scm",
+          "resourcePath": "Resources/Queries/javascript/highlights-jsx.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/javascript/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/javascript/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-jsdoc",
+      "repository": "https://github.com/tree-sitter/tree-sitter-jsdoc.git",
+      "revision": "d01984de49927c979b46ea5c01b78c8ddd79baf9",
+      "product": "TreeSitterJSDoc",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-jsdoc/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/jsdoc/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-json",
+      "repository": "https://github.com/tree-sitter/tree-sitter-json.git",
+      "revision": "254c42a6476413b776221e03982ac8ae159eeb72",
+      "product": "TreeSitterJSON",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-json/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/json/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-julia",
+      "repository": "https://github.com/tree-sitter/tree-sitter-julia.git",
+      "revision": "0c088d1ad270f02c4e84189247ac7001e86fe342",
+      "product": "TreeSitterJulia",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-julia/LICENSE"
+      ],
+      "queries": []
+    },
+    {
+      "name": "tree-sitter-kotlin",
+      "repository": "https://github.com/fwcd/tree-sitter-kotlin.git",
+      "revision": "76f53c48d29e8588934fb55b0240d7bdfe00bfe5",
+      "product": "TreeSitterKotlin",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-kotlin/LICENSE",
+        "Vendor/Licenses/tree-sitter-kotlin/nvim-treesitter-APACHE-2.0"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/kotlin/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-lua",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-lua.git",
+      "revision": "34e60e7f45fc313463c68090d88d742a55d1bd7a",
+      "product": "TreeSitterLua",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-lua/LICENSE.md"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/lua/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/lua/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-markdown",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-markdown.git",
+      "revision": "5cdc549ab8f461aff876c5be9741027189299cec",
+      "product": "TreeSitterMarkdown",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-markdown/LICENSE",
+        "Vendor/Licenses/tree-sitter-markdown/nvim-treesitter-APACHE-2.0"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "tree-sitter-markdown-inline/queries/highlights.scm",
+          "resourcePath": "Resources/Queries/markdown-inline/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "tree-sitter-markdown-inline/queries/injections.scm",
+          "resourcePath": "Resources/Queries/markdown-inline/injections.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "tree-sitter-markdown/queries/highlights.scm",
+          "resourcePath": "Resources/Queries/markdown/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "tree-sitter-markdown/queries/injections.scm",
+          "resourcePath": "Resources/Queries/markdown/injections.scm",
+          "changes": [
+            "Normalized markdown_inline injection identifier to markdownInline."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-objc",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-objc.git",
+      "revision": "62e61b6f5c0289c376d61a8c91faf6435cde9012",
+      "product": "TreeSitterObjc",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-objc/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/objc/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/objc/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-ocaml",
+      "repository": "https://github.com/tree-sitter/tree-sitter-ocaml.git",
+      "revision": "4abfdc1c7af2c6c77a370aee974627be1c285b3b",
+      "product": "TreeSitterOCaml",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-ocaml/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/ocaml/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-perl",
+      "repository": "https://github.com/ganezdragon/tree-sitter-perl.git",
+      "revision": "15a6914b9b891974c888ba7bf6c432665b920a3f",
+      "product": "TreeSitterPerl",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-perl/LICENSE"
+      ],
+      "queries": []
+    },
+    {
+      "name": "tree-sitter-php",
+      "repository": "https://github.com/tree-sitter/tree-sitter-php.git",
+      "revision": "b569a5f2c0d592e67430520d1a0e1f765d83ceb0",
+      "product": "TreeSitterPHP",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-php/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/php/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/php/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-python",
+      "repository": "https://github.com/tree-sitter/tree-sitter-python.git",
+      "revision": "4bfdd9033a2225cc95032ce77066b7aeca9e2efc",
+      "product": "TreeSitterPython",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-python/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/python/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-regex",
+      "repository": "https://github.com/tree-sitter/tree-sitter-regex.git",
+      "revision": "4470c59041416e8a2a9fa343595ca28ed91f38b8",
+      "product": "TreeSitterRegex",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-regex/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/regex/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-ruby",
+      "repository": "https://github.com/tree-sitter/tree-sitter-ruby.git",
+      "revision": "4d9ad3f010fdc47a8433adcf9ae30c8eb8475ae7",
+      "product": "TreeSitterRuby",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-ruby/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/ruby/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-rust",
+      "repository": "https://github.com/tree-sitter/tree-sitter-rust.git",
+      "revision": "79456e6080f50fc1ca7c21845794308fa5d35a51",
+      "product": "TreeSitterRust",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-rust/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/rust/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/rust/injections.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-scala",
+      "repository": "https://github.com/tree-sitter/tree-sitter-scala.git",
+      "revision": "45b5ba0e749a8477a8fd2666f082f352859bdc3c",
+      "product": "TreeSitterScala",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-scala/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/scala/highlights.scm",
+          "resourcePath": "Resources/Queries/scala/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-sql",
+      "repository": "https://github.com/DerekStride/tree-sitter-sql.git",
+      "revision": "fd70fb358d164cd93fbe2674a9cca276dc5203f7",
+      "product": "TreeSitterSQL",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-sql/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/sql/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-swift",
+      "repository": "https://github.com/alex-pinkus/tree-sitter-swift.git",
+      "revision": "31d17fe7e818a2048c808b5c6fdc2dc792f4f5b5",
+      "product": "TreeSitterSwift",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-swift/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/swift/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-toml",
+      "repository": "https://github.com/cengelbart39/tree-sitter-toml.git",
+      "revision": "28db724e8e30920638b46d408c0fbac007ac6a62",
+      "product": "TreeSitterTOML",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-toml/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/toml/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-typescript",
+      "repository": "https://github.com/tree-sitter/tree-sitter-typescript.git",
+      "revision": "d847898fec3fe596798c9fda55cb8c05a799001a",
+      "product": "TreeSitterTypeScript",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-typescript/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/typescript/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-verilog",
+      "repository": "https://github.com/tree-sitter/tree-sitter-verilog.git",
+      "revision": "902031343056bc0b11f3e47b33f036a9cf59f58d",
+      "product": "TreeSitterVerilog",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-verilog/LICENSE"
+      ],
+      "queries": []
+    },
+    {
+      "name": "tree-sitter-yaml",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-yaml.git",
+      "revision": "7b03feefd36b5f155465ca736c6304aca983b267",
+      "product": "TreeSitterYAML",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-yaml/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/yaml/highlights.scm",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "name": "tree-sitter-zig",
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-zig.git",
+      "revision": "eb7d58c2dc4fbeea4745019dee8df013034ae66b",
+      "product": "TreeSitterZig",
+      "licenses": [
+        "Vendor/Licenses/tree-sitter-zig/LICENSE"
+      ],
+      "queries": [
+        {
+          "upstreamPath": "queries/highlights.scm",
+          "resourcePath": "Resources/Queries/zig/highlights.scm",
+          "changes": []
+        },
+        {
+          "upstreamPath": "queries/injections.scm",
+          "resourcePath": "Resources/Queries/zig/injections.scm",
+          "changes": []
+        }
+      ]
+    }
+  ]
+}
