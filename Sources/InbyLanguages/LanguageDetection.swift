@@ -29,14 +29,14 @@ public extension CodeLanguage {
             guard let program = words.first(where: { !$0.hasPrefix("-") && !$0.contains("=") }) else { return nil }
             command = program.lowercased()
         }
-        // Version suffixes are part of common interpreter executable names.
-        if command.hasPrefix("python"), command.dropFirst("python".count).allSatisfy({ $0.isNumber || $0 == "." }) {
-            return .python
-        }
         return fromIdentifier(command)
     }
 
     private static func fromIdentifier(_ identifier: String) -> CodeLanguage? {
+        // Shared by shebangs and modelines, including versioned Python aliases.
+        if identifier.hasPrefix("python"), identifier.dropFirst("python".count).allSatisfy({ $0.isNumber || $0 == "." }) {
+            return .python
+        }
         if identifier == "node" || identifier == "deno" { return .javascript }
         return allLanguages.first { $0.tsName == identifier || $0.extensions.contains(identifier) }
     }

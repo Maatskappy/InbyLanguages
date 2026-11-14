@@ -792,7 +792,9 @@
         {
           "upstreamPath": "queries/highlights.scm",
           "resourcePath": "Resources/Queries/swift/highlights.scm",
-          "changes": []
+          "changes": [
+            "Normalized capture categories to the existing editor contract; placed general identifiers after specific captures."
+          ]
         }
       ],
       "build": "external-source-package"
