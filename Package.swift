@@ -4,12 +4,14 @@ import PackageDescription
 let package = Package(
     name: "InbyLanguages",
     platforms: [.macOS(.v13), .iOS(.v16)],
-    products: [.library(name: "InbyLanguages", targets: ["InbyLanguages"])],
+    products: [
+        .library(name: "InbyLanguages", targets: ["InbyLanguages"]),
+        .library(name: "TreeSitterJSON", targets: ["TreeSitterJSON"])
+    ],
     dependencies: [
         .package(url: "https://github.com/ChimeHQ/SwiftTreeSitter", exact: "0.25.0"),
         .package(url: "https://github.com/tree-sitter/tree-sitter", exact: "0.25.10"),
-        .package(url: "https://github.com/alex-pinkus/tree-sitter-swift", revision: "31d17fe7e818a2048c808b5c6fdc2dc792f4f5b5"),
-        .package(url: "https://github.com/tree-sitter/tree-sitter-json", revision: "254c42a6476413b776221e03982ac8ae159eeb72")
+        .package(url: "https://github.com/alex-pinkus/tree-sitter-swift", exact: "0.7.3-with-generated-files")
     ],
     targets: [
         .target(
@@ -17,7 +19,7 @@ let package = Package(
             dependencies: [
                 .product(name: "SwiftTreeSitter", package: "SwiftTreeSitter"),
                 .product(name: "TreeSitterSwift", package: "tree-sitter-swift"),
-                .product(name: "TreeSitterJSON", package: "tree-sitter-json"),
+                "TreeSitterJSON",
                 "TreeSitterAgda",
                 "TreeSitterBash",
                 "TreeSitterC",
@@ -58,6 +60,7 @@ let package = Package(
             resources: [.copy("Resources")]
         ),
         .testTarget(name: "InbyLanguagesTests", dependencies: ["InbyLanguages"]),
+        .target(name: "TreeSitterJSON", path: "Vendor/Grammars/tree-sitter-json", sources: ["src/parser.c"], publicHeadersPath: "bindings/swift", cSettings: [.headerSearchPath("src")]),
         .target(name: "TreeSitterAgda", path: "Vendor/Grammars/tree-sitter-agda", sources: ["src/parser.c", "src/scanner.c"], publicHeadersPath: "bindings/swift", cSettings: [.headerSearchPath("src")]),
         .target(name: "TreeSitterBash", path: "Vendor/Grammars/tree-sitter-bash", sources: ["src/parser.c", "src/scanner.c"], publicHeadersPath: "bindings/swift", cSettings: [.headerSearchPath("src")]),
         .target(name: "TreeSitterC", path: "Vendor/Grammars/tree-sitter-c", sources: ["src/parser.c"], publicHeadersPath: "bindings/swift", cSettings: [.headerSearchPath("src")]),
