@@ -8,7 +8,16 @@
       "licenses": [
         "Vendor/Licenses/tree-sitter-agda/LICENSE"
       ],
-      "queries": []
+      "queries": [],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterAgda/agda.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-bash",
@@ -24,7 +33,16 @@
           "resourcePath": "Resources/Queries/bash/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterBash/bash.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-c",
@@ -40,7 +58,13 @@
           "resourcePath": "Resources/Queries/c/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterC/c.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-c-sharp",
@@ -56,7 +80,14 @@
           "resourcePath": "Resources/Queries/c-sharp/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterCSharp/csharp.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-cpp",
@@ -77,7 +108,15 @@
           "resourcePath": "Resources/Queries/cpp/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterCPP/cpp.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h",
+        "src/tree_sitter/runtime.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-css",
@@ -93,7 +132,14 @@
           "resourcePath": "Resources/Queries/css/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterCSS/css.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-dart",
@@ -109,7 +155,16 @@
           "resourcePath": "Resources/Queries/dart/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterDart/dart.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-dockerfile",
@@ -125,7 +180,13 @@
           "resourcePath": "Resources/Queries/dockerfile/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterDockerfile/dockerfile.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-elixir",
@@ -147,7 +208,14 @@
           "resourcePath": "Resources/Queries/elixir/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterElixir/elixir.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-go",
@@ -163,7 +231,13 @@
           "resourcePath": "Resources/Queries/go/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterGo/go.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-go-mod",
@@ -179,7 +253,13 @@
           "resourcePath": "Resources/Queries/go-mod/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterGoMod/gomod.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-haskell",
@@ -196,7 +276,15 @@
           "resourcePath": "Resources/Queries/haskell/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterHaskell/haskell.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h",
+        "src/unicode.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-html",
@@ -217,7 +305,15 @@
           "resourcePath": "Resources/Queries/html/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterHTML/html.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tag.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-java",
@@ -233,7 +329,13 @@
           "resourcePath": "Resources/Queries/java/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterJava/java.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-javascript",
@@ -259,7 +361,14 @@
           "resourcePath": "Resources/Queries/javascript/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterJS/javascript.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-jsdoc",
@@ -275,7 +384,13 @@
           "resourcePath": "Resources/Queries/jsdoc/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/jsdoc.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-json",
@@ -291,7 +406,8 @@
           "resourcePath": "Resources/Queries/json/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "build": "external-source-package"
     },
     {
       "name": "tree-sitter-julia",
@@ -301,7 +417,14 @@
       "licenses": [
         "Vendor/Licenses/tree-sitter-julia/LICENSE"
       ],
-      "queries": []
+      "queries": [],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterJulia/julia.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-kotlin",
@@ -318,7 +441,16 @@
           "resourcePath": "Resources/Queries/kotlin/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterKotlin/kotlin.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-lua",
@@ -339,7 +471,16 @@
           "resourcePath": "Resources/Queries/lua/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterLua/lua.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-markdown",
@@ -373,7 +514,22 @@
             "Normalized markdown_inline injection identifier to markdownInline."
           ]
         }
-      ]
+      ],
+      "sourceFiles": [
+        "tree-sitter-markdown-inline/bindings/swift/TreeSitterMarkdownInline/markdown_inline.h",
+        "tree-sitter-markdown-inline/src/parser.c",
+        "tree-sitter-markdown-inline/src/scanner.c",
+        "tree-sitter-markdown-inline/src/tree_sitter/alloc.h",
+        "tree-sitter-markdown-inline/src/tree_sitter/array.h",
+        "tree-sitter-markdown-inline/src/tree_sitter/parser.h",
+        "tree-sitter-markdown/bindings/swift/TreeSitterMarkdown/markdown.h",
+        "tree-sitter-markdown/src/parser.c",
+        "tree-sitter-markdown/src/scanner.c",
+        "tree-sitter-markdown/src/tree_sitter/alloc.h",
+        "tree-sitter-markdown/src/tree_sitter/array.h",
+        "tree-sitter-markdown/src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-objc",
@@ -394,7 +550,13 @@
           "resourcePath": "Resources/Queries/objc/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/objc.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-ocaml",
@@ -410,7 +572,18 @@
           "resourcePath": "Resources/Queries/ocaml/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterOCaml/ocaml.h",
+        "common/scanner.h",
+        "interface/src/parser.c",
+        "interface/src/scanner.c",
+        "interface/src/tree_sitter/parser.h",
+        "ocaml/src/parser.c",
+        "ocaml/src/scanner.c",
+        "ocaml/src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-perl",
@@ -420,7 +593,14 @@
       "licenses": [
         "Vendor/Licenses/tree-sitter-perl/LICENSE"
       ],
-      "queries": []
+      "queries": [],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterPerl/perl.h",
+        "src/parser.c",
+        "src/scanner.cc",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-php",
@@ -441,7 +621,18 @@
           "resourcePath": "Resources/Queries/php/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterPHP/php.h",
+        "common/scanner.h",
+        "php/src/parser.c",
+        "php/src/scanner.c",
+        "php/src/tree_sitter/parser.h",
+        "php_only/src/parser.c",
+        "php_only/src/scanner.c",
+        "php_only/src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-python",
@@ -457,7 +648,14 @@
           "resourcePath": "Resources/Queries/python/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterPython/python.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-regex",
@@ -473,7 +671,16 @@
           "resourcePath": "Resources/Queries/regex/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterRegex/regex.h",
+        "src/parser.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h",
+        "src/tree_sitter/runtime.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-ruby",
@@ -489,7 +696,14 @@
           "resourcePath": "Resources/Queries/ruby/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterRuby/ruby.h",
+        "src/parser.c",
+        "src/scanner.cc",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-rust",
@@ -510,7 +724,14 @@
           "resourcePath": "Resources/Queries/rust/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterRust/rust.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-scala",
@@ -526,7 +747,15 @@
           "resourcePath": "Resources/Queries/scala/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterScala/scala.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/stack.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-sql",
@@ -542,7 +771,14 @@
           "resourcePath": "Resources/Queries/sql/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterSQL/sql.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-swift",
@@ -558,7 +794,8 @@
           "resourcePath": "Resources/Queries/swift/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "build": "external-source-package"
     },
     {
       "name": "tree-sitter-toml",
@@ -574,7 +811,14 @@
           "resourcePath": "Resources/Queries/toml/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterTOML/toml.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-typescript",
@@ -590,7 +834,18 @@
           "resourcePath": "Resources/Queries/typescript/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterTypeScript/typescript.h",
+        "common/scanner.h",
+        "tsx/src/parser.c",
+        "tsx/src/scanner.c",
+        "tsx/src/tree_sitter/parser.h",
+        "typescript/src/parser.c",
+        "typescript/src/scanner.c",
+        "typescript/src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-verilog",
@@ -600,7 +855,13 @@
       "licenses": [
         "Vendor/Licenses/tree-sitter-verilog/LICENSE"
       ],
-      "queries": []
+      "queries": [],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterVerilog/verilog.h",
+        "src/parser.c",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-yaml",
@@ -616,7 +877,26 @@
           "resourcePath": "Resources/Queries/yaml/highlights.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterYAML/yaml.h",
+        "schema/core/src/parser.c",
+        "schema/core/src/tree_sitter/alloc.h",
+        "schema/core/src/tree_sitter/array.h",
+        "schema/core/src/tree_sitter/parser.h",
+        "schema/json/src/parser.c",
+        "schema/json/src/tree_sitter/alloc.h",
+        "schema/json/src/tree_sitter/array.h",
+        "schema/json/src/tree_sitter/parser.h",
+        "src/parser.c",
+        "src/scanner.c",
+        "src/schema.core.c",
+        "src/schema.json.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     },
     {
       "name": "tree-sitter-zig",
@@ -637,7 +917,15 @@
           "resourcePath": "Resources/Queries/zig/injections.scm",
           "changes": []
         }
-      ]
+      ],
+      "sourceFiles": [
+        "bindings/swift/TreeSitterZig/zig.h",
+        "src/parser.c",
+        "src/tree_sitter/alloc.h",
+        "src/tree_sitter/array.h",
+        "src/tree_sitter/parser.h"
+      ],
+      "build": "vendored-source"
     }
   ]
 }
