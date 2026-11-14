@@ -1,3 +1,5 @@
+; Modified: normalize capture categories for editor compatibility.
+; General identifiers follow specific method/parameter/property captures.
 [
   "."
   ";"
@@ -36,35 +38,34 @@
   (parameter_modifier)
   (inheritance_modifier)
   (mutation_modifier)
-] @keyword.modifier
+] @keyword
 
-(simple_identifier) @variable
 
 (function_declaration
-  (simple_identifier) @function.method)
+  (simple_identifier) @method)
 
 (protocol_function_declaration
-  name: (simple_identifier) @function.method)
+  name: (simple_identifier) @method)
 
 (init_declaration
   "init" @constructor)
 
 (parameter
-  external_name: (simple_identifier) @variable.parameter)
+  external_name: (simple_identifier) @parameter)
 
 (parameter
-  name: (simple_identifier) @variable.parameter)
+  name: (simple_identifier) @parameter)
 
 (type_parameter
-  (type_identifier) @variable.parameter)
+  (type_identifier) @parameter)
 
 (inheritance_constraint
   (identifier
-    (simple_identifier) @variable.parameter))
+    (simple_identifier) @parameter))
 
 (equality_constraint
   (identifier
-    (simple_identifier) @variable.parameter))
+    (simple_identifier) @parameter))
 
 [
   "protocol"
@@ -97,34 +98,34 @@
   "struct"
   "class"
   "typealias"
-] @keyword.type
+] @keyword
 
 [
   "async"
   "await"
-] @keyword.coroutine
+] @keyword
 
 (shebang_line) @keyword.directive
 
 (class_body
   (property_declaration
     (pattern
-      (simple_identifier) @variable.member)))
+      (simple_identifier) @property)))
 
 (protocol_property_declaration
   (pattern
-    (simple_identifier) @variable.member))
+    (simple_identifier) @property))
 
 (navigation_expression
   (navigation_suffix
-    (simple_identifier) @variable.member))
+    (simple_identifier) @property))
 
 (value_argument
   name: (value_argument_label
-    (simple_identifier) @variable.member))
+    (simple_identifier) @property))
 
 (import_declaration
-  "import" @keyword.import)
+  "import" @include)
 
 (enum_entry
   "case" @keyword)
@@ -169,26 +170,26 @@
 
 ; Statements
 (for_statement
-  "for" @keyword.repeat)
+  "for" @repeat)
 
 (for_statement
-  "in" @keyword.repeat)
+  "in" @repeat)
 
 [
   "while"
   "repeat"
   "continue"
   "break"
-] @keyword.repeat
+] @repeat
 
 (guard_statement
-  "guard" @keyword.conditional)
+  "guard" @conditional)
 
 (if_statement
-  "if" @keyword.conditional)
+  "if" @conditional)
 
 (switch_statement
-  "switch" @keyword.conditional)
+  "switch" @conditional)
 
 (switch_entry
   "case" @keyword)
@@ -205,14 +206,14 @@
   [
     "?"
     ":"
-  ] @keyword.conditional.ternary)
+  ] @conditional)
 
 [
   (try_operator)
   "do"
   (throw_keyword)
   (catch_keyword)
-] @keyword.exception
+] @keyword
 
 (statement_label) @label
 
@@ -222,19 +223,19 @@
   (multiline_comment)
 ] @comment @spell
 
-((comment) @comment.documentation
-  (#match? @comment.documentation "^///[^/]"))
+((comment) @comment
+  (#match? @comment "^///[^/]"))
 
-((comment) @comment.documentation
-  (#match? @comment.documentation "^///$"))
+((comment) @comment
+  (#match? @comment "^///$"))
 
-((multiline_comment) @comment.documentation
-  (#match? @comment.documentation "^/[*][*][^*].*[*]/$"))
+((multiline_comment) @comment
+  (#match? @comment "^/[*][*][^*].*[*]/$"))
 
 ; String literals
 (line_str_text) @string
 
-(str_escaped_char) @string.escape
+(str_escaped_char) @string
 
 (multi_line_str_text) @string
 
@@ -277,16 +278,16 @@
   (bin_literal)
 ] @number
 
-(real_literal) @number.float
+(real_literal) @float
 
 (boolean_literal) @boolean
 
-"nil" @constant.builtin
+"nil" @variable.builtin
 
 (wildcard_pattern) @character.special
 
 ; Regex literals
-(regex_literal) @string.regexp
+(regex_literal) @string.regex
 
 ; Operators
 (custom_operator) @operator
@@ -334,3 +335,6 @@
     "<"
     ">"
   ] @punctuation.bracket)
+
+; General identifier styling has lower priority than specific roles.
+(simple_identifier) @variable

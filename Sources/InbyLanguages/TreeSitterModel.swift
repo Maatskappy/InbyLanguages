@@ -26,12 +26,17 @@ public final class TreeSitterModel: @unchecked Sendable {
         guard let entry = CodeLanguage.allLanguages.first(where: { $0.id == id }),
               let language = entry.language else { return nil }
         var resources: [(String, String)] = []
-        if id == .cpp || id == .objc { resources.append(("c", "highlights")) }
-        if id == .typescript || id == .tsx { resources.append(("javascript", "highlights")) }
-        resources.append((entry.tsName, "highlights"))
-        if id == .jsx || id == .tsx { resources.append(("javascript", "highlights-jsx")) }
-        if entry.additionalHighlights?.contains("injections") == true {
-            resources.append((entry.tsName, "injections"))
+        // Capture IDs encode precedence: child/specific queries come first.
+        if id == .cpp || id == .objc {
+            resources = [(entry.tsName, "highlights"), ("c", "highlights")]
+        } else if id == .typescript || id == .tsx {
+            resources = [(entry.tsName, "highlights"), ("javascript", "highlights")]
+        } else {
+            if id == .jsx { resources.append(("javascript", "highlights-jsx")) }
+            if entry.additionalHighlights?.contains("injections") == true {
+                resources.append((entry.tsName, "injections"))
+            }
+            resources.append((entry.tsName, "highlights"))
         }
         let text = try resources.map { directory, name in
             guard let url = CodeLanguage.queryResource(directory, name) else {
