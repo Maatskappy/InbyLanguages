@@ -4,15 +4,19 @@ package_root=$(cd "$(dirname "$0")/.." && pwd)
 consumer="$package_root/.build/versioned-consumer"
 tag="0.0.0-consumer-check"
 mkdir -p "$consumer/Sources/Consumer"
-git -C "$package_root" tag "$tag" HEAD
-trap 'git -C "$package_root" tag -d "$tag" >/dev/null' EXIT
+repository="$consumer/InbyLanguages.git"
+if [ ! -d "$repository" ]; then
+    git clone --bare --shared "$package_root" "$repository"
+fi
+git --git-dir="$repository" fetch "$package_root" HEAD
+git --git-dir="$repository" tag -f "$tag" FETCH_HEAD
 cat > "$consumer/Package.swift" <<SWIFT
 // swift-tools-version: 5.9
 import PackageDescription
 let package = Package(
     name: "Consumer",
     platforms: [.macOS(.v13)],
-    dependencies: [.package(url: "file://$package_root", exact: "$tag")],
+    dependencies: [.package(url: "file://$repository", exact: "$tag")],
     targets: [.executableTarget(name: "Consumer", dependencies: [
         .product(name: "InbyLanguages", package: "InbyLanguages"),
         .product(name: "TreeSitterJSON", package: "InbyLanguages")
