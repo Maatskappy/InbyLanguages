@@ -35,6 +35,13 @@
 
 (file_descriptor) @number
 
+; Modified: colour substitution and expansion delimiters only, so the
+; commands and names inside keep their own captures.
+(command_substitution "$(" @variable)
+(command_substitution ")" @variable)
+(expansion "${" @variable)
+(expansion "}" @variable)
+
 [
   (command_substitution)
   (process_substitution)

@@ -46,6 +46,16 @@
 ] @number
 
 (comment) @comment
+
+; Modified: module, class and function docstrings read as documentation.
+(module
+  . (comment)*
+  . (expression_statement . (string) @comment .))
+(class_definition
+  body: (block . (expression_statement . (string) @comment .)))
+(function_definition
+  body: (block . (expression_statement . (string) @comment .)))
+
 (string) @string
 (escape_sequence) @escape
 
